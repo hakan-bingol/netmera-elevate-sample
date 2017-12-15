@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 Inomera Research.
+  -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/send_short_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_short_push"/>
+
+        <Button
+            android:id="@+id/send_medium_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_medium_push"/>
+
+        <Button
+            android:id="@+id/send_long_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_long_push"/>
+
+        <Button
+            android:id="@+id/send_interactive_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_interactive_push"/>
+
+        <Button
+            android:id="@+id/send_interactive_deeplink_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_interactive_deeplink_push"/>
+
+        <Button
+            android:id="@+id/send_big_image_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_big_image_push"/>
+
+        <Button
+            android:id="@+id/send_interactive_big_image_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_interactive_big_image_push"/>
+
+        <Button
+            android:id="@+id/send_big_text_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_big_text_push"/>
+
+        <TextView
+            android:id="@+id/text_view_received_push_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

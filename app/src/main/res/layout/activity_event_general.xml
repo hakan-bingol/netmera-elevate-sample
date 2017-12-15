@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 Inomera Research.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_banner_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_banner_open"/>
+
+        <Button
+            android:id="@+id/button_category_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_category_view"/>
+
+        <Button
+            android:id="@+id/button_in_app_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_in_app_purchase"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_login"/>
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_register"/>
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_search"/>
+
+        <Button
+            android:id="@+id/button_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_share"/>
+
+    </LinearLayout>
+
+</ScrollView>

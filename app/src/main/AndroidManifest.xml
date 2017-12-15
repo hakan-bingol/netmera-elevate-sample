@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.inomera.netmerang"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Maps -->
+    <!-- EXTERNAL_STORAGE permissions are optional for Android 6.0 onwards. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22"/>
+    <!-- Maps -->
+
+    <application
+        android:name=".NGApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="3dbf171bf85130918795c3cc1e20c15883c86690"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDfx3ewfaOooEBLnxxRpk0HEt2IgKqtJ7w"/>
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.SchemeProductActivity"
+            android:label="@string/activity_scheme_product">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="product"
+                    android:scheme="netmera"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.SchemeCategoryActivity"
+            android:label="@string/activity_scheme_category">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="category"
+                    android:scheme="netmera"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:label="@string/activity_web_view"/>
+
+        <activity
+            android:name=".activities.MapActivity"
+            android:label="@string/activity_mock_location"/>
+
+        <activity
+            android:name=".activities.UpdateUserActivity"
+            android:label="@string/activity_update_user"/>
+
+        <activity
+            android:name=".activities.PushInboxActivity"
+            android:label="@string/activity_push_inbox"/>
+
+        <activity
+            android:name=".activities.EventCommerceActivity"
+            android:label="@string/activity_event_commerce"/>
+
+        <activity
+            android:name=".activities.EventGeneralActivity"
+            android:label="@string/activity_event_general"/>
+
+        <activity
+            android:name=".activities.EventMediaActivity"
+            android:label="@string/activity_event_media"/>
+        <activity
+            android:name=".activities.TransactionalPushActivity"
+            android:label="@string/activity_transactional_push"/>
+
+        <receiver
+            android:name=".NGPushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.netmera.push.intent.REGISTER"/>
+                <action android:name="com.netmera.push.intent.RECEIVE"/>
+                <action android:name="com.netmera.push.intent.OPEN"/>
+                <action android:name="com.netmera.push.intent.DISMISS"/>
+                <action android:name="com.netmera.push.intent.BUTTON"/>
+                <action android:name="com.netmera.push.intent.carousel.OPEN"/>
+                <action android:name="com.netmera.push.intent.carousel.PREV"/>
+                <action android:name="com.netmera.push.intent.carousel.NEXT"/>
+                <action android:name="com.netmera.push.intent.carousel.ITEM"/>
+            </intent-filter>
+        </receiver>
+
+        <!--<receiver-->
+            <!--android:name=".NGWebContentBroadcastReceiver"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.netmera.web.content.SHOW"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+    </application>
+
+</manifest>

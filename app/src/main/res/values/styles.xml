@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">#f47f1f</item>
+
+        <item name="colorPrimary">#3d82d4</item>
+        <item name="colorPrimaryDark">#106ad4</item>
+
+        <item name="colorButtonNormal">#009000</item>
+        <item name="colorControlNormal">#900000</item>
+        <item name="colorControlActivated">#bbb529</item>
+        <!--<item name="colorControlHighlight">#ff1a26cf</item>-->
+        <item name="alertDialogTheme">@style/AlertDialogCustom</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Splash">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#9876aa</item>
+        <item name="colorControlNormal">#900000</item>
+        <item name="colorControlActivated">#bbb529</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Custom in-app message style -->
+    <style name="NetmeraInAppMessageStyle">
+        <item name="inAppMessageWidth">@integer/netmera_default_vertical_width</item>
+        <item name="inAppMessageHeight">@integer/netmera_default_vertical_height</item>
+        <item name="inAppMessageWeight">@integer/netmera_default_vertical_weight</item>
+        <item name="inAppMessageBackgroundColor">@drawable/netmera_bg_in_app_message</item>
+        <item name="inAppMessageCancelButtonDrawable">@drawable/netmera_ic_action_cancel</item>
+        <item name="inAppMessageTitleSize">@dimen/netmera_text_default_size</item>
+        <item name="inAppMessageTitleColor">@android:color/primary_text_light</item>
+        <item name="inAppMessageTextSize">@dimen/netmera_text_default_size</item>
+        <item name="inAppMessageTextColor">@android:color/primary_text_light</item>
+        <item name="inAppMessageFontPath">font/DroidSerif-Regular.ttf</item>
+    </style>
+
+</resources>

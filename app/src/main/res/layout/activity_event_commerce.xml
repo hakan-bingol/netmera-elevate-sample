@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 Inomera Research.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_cart_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_cart_add_product"/>
+
+        <Button
+            android:id="@+id/button_cart_remove_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_cart_remove_product"/>
+
+        <Button
+            android:id="@+id/button_cart_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_cart_view"/>
+
+        <Button
+            android:id="@+id/button_order_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_order_cancel"/>
+
+        <Button
+            android:id="@+id/button_product_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_product_comment"/>
+
+        <Button
+            android:id="@+id/button_product_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_product_rate"/>
+
+        <Button
+            android:id="@+id/button_product_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_product_view"/>
+
+        <Button
+            android:id="@+id/button_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_purchase"/>
+
+    </LinearLayout>
+
+</ScrollView>

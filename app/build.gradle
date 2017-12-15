@@ -1,0 +1,121 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.20.1'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+def versionMajor = 1
+def versionMinor = 1
+def versionBuild = 0
+def versionCommit = gitCommitCount()
+
+def gitCommitCount() {
+    return 'git rev-list HEAD --count'.execute().text.trim()
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.netmera.app"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "${versionMajor}.${versionMinor}.${versionBuild}.${versionCommit}"
+        //following line is for using custom push receiver
+        resValue "bool", "netmera_use_default_push_receiver", "false"
+
+        testInstrumentationRunner "com.inomera.netmerang.TestRunner"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+        }
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled = true
+
+            signingConfig signingConfigs.debug
+
+            ext.betaDistributionReleaseNotesFilePath = './app/crashlytics-release-notes.txt'
+            ext.betaDistributionEmailsFilePath = './app/crashlytics-tester-emails.txt'
+            ext.betaDistributionGroupAliasesFilePath = './app/crashlytics-tester-group.txt'
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        elevate {
+            buildConfigField("String", "ENVIRONMENT_TYPE", "\"property/elevate.properties\"")
+        }
+        nova {
+            buildConfigField("String", "ENVIRONMENT_TYPE", "\"property/nova.properties\"")
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+    compile 'com.google.android.gms:play-services-maps:11.4.0'
+    compile 'com.google.android.gms:play-services-location:11.4.0'
+    compile 'com.android.support:appcompat-v7:26.0.2'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //Following is another volley dependency. Since in sdk we uses com.mcxiaoke.volley, during build
+    //"Multiple dex files define ..." error occurs. Therefore, "exclude module: 'library'" must be used in sdk
+    //dependency.
+    //compile 'me.neavo:volley:2014.12.09'
+    compile 'com.netmera:netmera:3.5.0'
+    compile ('com.android.support.test.espresso:espresso-idling-resource:2.2.2', {
+        exclude module: 'support-annotations'
+        exclude group: 'com.google.code.findbugs'
+
+    })
+    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude module: 'support-annotations'
+        exclude group: 'com.google.code.findbugs'
+    })
+    androidTestCompile ('com.android.support.test:runner:0.5', {
+        exclude module: 'support-annotations'
+    })
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "http://release.netmera.com/release/android" }
+    maven {
+        credentials {
+            username repoUser
+            password repoPass
+        }
+        url "http://repo.netmera.com"
+    }
+    maven {
+        url 'https://maven.google.com'
+    }
+}

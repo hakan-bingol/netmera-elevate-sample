@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">NetmeraApp</string>
+
+    <!-- ACTIVITIES-->
+    <string name="activity_scheme_product">Scheme Product Activity</string>
+    <string name="activity_scheme_category">Scheme Category Activity</string>
+    <string name="activity_web_view">Custom WebView Activity</string>
+    <string name="activity_mock_location">Mock Location Map Activity</string>
+    <string name="activity_event_commerce">Event Commerce Activity</string>
+    <string name="activity_event_media">Event Media Activity</string>
+    <string name="activity_event_general">Event General Activity</string>
+    <string name="activity_update_user">Update User Activity</string>
+    <string name="activity_push_inbox">Push Inbox Activity</string>
+    <string name="activity_transactional_push">Transactional Push Activity</string>
+    <string name="start_transactional_push_activity">Transactional Push</string>
+
+    <!-- EVENTS-->
+    <!-- Commerce-->
+    <string name="event_cart_add_product">Event Cart Add Product</string>
+    <string name="event_cart_remove_product">Event Cart Remove Product</string>
+    <string name="event_cart_view">Event Cart View</string>
+    <string name="event_order_cancel">Event Order Cancel</string>
+    <string name="event_product_comment">Event Product Comment</string>
+    <string name="event_product_rate">Event Product Rate</string>
+    <string name="event_product_view">Event Product View</string>
+    <string name="event_purchase">Event Purchase</string>
+    <!-- Media-->
+    <string name="event_content_comment">Event Content Comment</string>
+    <string name="event_content_rate">Event Content Rate</string>
+    <string name="event_content_view">Event Content View</string>
+    <!-- General-->
+    <string name="event_banner_open">Event Banner Open</string>
+    <string name="event_category_view">Event Category View</string>
+    <string name="event_in_app_purchase">Event In App Purchase</string>
+    <string name="event_login">Event Login</string>
+    <string name="event_register">Event Register</string>
+    <string name="event_search">Event Search</string>
+    <string name="event_share">Event Share</string>
+
+    <!-- MAIN ACTIVITY-->
+    <string name="start_second_activity">Start Second Activity</string>
+    <string name="enable_location">Enable Location &amp; Geofence</string>
+    <string name="mock_location">Choose Mock Location</string>
+    <string name="update_user_test">Update User Test</string>
+    <string name="push_inbox_test">Push Inbox Test</string>
+    <string name="event_commerce_test">Commerce Event Test</string>
+    <string name="event_media_test">Media Event Test</string>
+    <string name="event_general_test">General Event Test</string>
+
+    <!-- GENERAL API-->
+    <string name="general_enable_push">Enable Push</string>
+    <string name="general_disable_push">Disable Push</string>
+    <string name="general_update_user">Update User</string>
+    <string name="general_inbox_fetch">Fetch Inbox</string>
+    <string name="general_inbox_next_page">Fetch Next Page</string>
+    <string name="general_inbox_set_status">Set Inbox Status</string>
+
+    <!-- USER INFO-->
+    <string name="user_info_id">Unique User ID</string>
+    <string name="user_info_name">Name</string>
+    <string name="user_info_surname">Surname</string>
+    <string name="user_info_email">Email</string>
+    <string name="user_info_msisdn">Msisdn</string>
+    <string name="user_info_segments">Segments i.e seg1,seg2</string>
+    <string name="user_info_gender">MALE:0, FEMALE:1, NOYB:2</string>
+    <string name="user_info_date_of_birth">Date Of Birth (dd-MM-yyyy)</string>
+    <string name="inbox_status_read">READ</string>
+    <string name="inbox_status_unread">UNREAD</string>
+    <string name="inbox_status_deleted">DELETED</string>
+    <string name="inbox_info">Current : %1$d || Unread : %2$d || Total : %3$d</string>
+    <string name="base_url">Base URL</string>
+    <string name="api_key">API Key</string>
+
+    <string name="google_app_id">175381962998</string>
+
+    <!-- TRANSACTIONAL PUSH ACTIVITY-->
+    <string name="send_short_push">Send Push With Short Text</string>
+    <string name="send_medium_push">Send Push With Medium Text</string>
+    <string name="send_long_push">Send Push With Long Text</string>
+    <string name="send_interactive_push">Send Interactive Push</string>
+    <string name="send_interactive_deeplink_push">Send Interactive Push With Deeplink</string>
+    <string name="send_big_image_push">Send Image Push</string>
+    <string name="send_interactive_big_image_push">Send Image Push With Deeplink</string>
+    <string name="send_big_text_push">Send Push With Big Text</string>
+</resources>
