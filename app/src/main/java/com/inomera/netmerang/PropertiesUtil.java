@@ -27,7 +27,7 @@ public final class PropertiesUtil {
   public static void init(Context context, boolean isTest) {
     try {
       AssetManager assetManager = context.getAssets();
-      InputStream inputStream = assetManager.open(BuildConfig.ENVIRONMENT_TYPE);
+      InputStream inputStream = assetManager.open(NGApplication.endPoint.getRootPoint());
       Properties properties = new Properties();
       properties.load(inputStream);
 

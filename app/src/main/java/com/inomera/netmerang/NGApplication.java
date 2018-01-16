@@ -12,7 +12,12 @@ import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.crashlytics.android.Crashlytics;
+import com.inomera.endpoint.EndPoint;
+import com.inomera.endpoint.model.Point;
 import com.netmera.Netmera;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -22,11 +27,13 @@ import io.fabric.sdk.android.Fabric;
 public class NGApplication extends Application {
 
   public static String userId;
+  public static EndPoint endPoint;
 
   @Override public void onCreate() {
     super.onCreate();
     initLegacyData();
     Fabric.with(this, new Crashlytics());
+    configureEndPoint();
     initProperties();
     userId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
   }
@@ -54,5 +61,16 @@ public class NGApplication extends Application {
       Netmera.setBaseUrl(baseUrl);
       Netmera.setApiKey(apiKey);
     }
+  }
+
+  private void configureEndPoint(){
+    List<Point> points = new ArrayList<>();
+    points.add(new Point("Elevate", "property/elevate.properties"));
+    points.add(new Point("Nova", "property/nova.properties"));
+    endPoint = new EndPoint.Builder(this)
+            .setEndPoints(points)
+            .setDefaultEndPoint(new Point("Default", BuildConfig.ENVIRONMENT_TYPE))
+            .create();
+
   }
 }

@@ -38,11 +38,11 @@
         <item name="inAppMessageWidth">@integer/netmera_default_vertical_width</item>
         <item name="inAppMessageHeight">@integer/netmera_default_vertical_height</item>
         <item name="inAppMessageWeight">@integer/netmera_default_vertical_weight</item>
-        <item name="inAppMessageBackgroundColor">@drawable/netmera_bg_in_app_message</item>
+        <item name="inAppMessageBackground">@drawable/netmera_bg_in_app_message</item>
         <item name="inAppMessageCancelButtonDrawable">@drawable/netmera_ic_action_cancel</item>
         <item name="inAppMessageTitleSize">@dimen/netmera_text_default_size</item>
         <item name="inAppMessageTitleColor">@android:color/primary_text_light</item>
-        <item name="inAppMessageTextSize">@dimen/netmera_text_default_size</item>
+        <item name="inAppMessageTextSize">@dimen/netmera_text_small_size</item>
         <item name="inAppMessageTextColor">@android:color/primary_text_light</item>
         <item name="inAppMessageFontPath">font/DroidSerif-Regular.ttf</item>
     </style>
