@@ -1,6 +1,6 @@
 # Netmera SDK Sample
 <html>
-<div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Quick Start</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
+	<div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Quick Start</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
 <!-- Gah, you have to manually restart the app if you change this!-->
 <div class="magic-block-textarea"><p>This section provides information about the basic steps required in order to be able to receive push notifications sent from Netmera Dashboard on your devices.</p>
 <h2 class="header-scroll"><div class="anchor waypoint" id="section-create-a-google-cloud-messaging-configuration"></div>Create A Google Cloud Messaging Configuration<a class="fa fa-anchor" href="#section-create-a-google-cloud-messaging-configuration"></a></h2>
@@ -137,8 +137,7 @@
 	<div class="callout-body"><p>This step is crucial if you use proguard:<br>Netmera uses Gson for json operations. Therefore, make sure that you have added up-to-date proguard rules of Gson to your configuration file.<br>Currently list of rules are <a href="https://github.com/google/gson/blob/master/examples/android-proguard-example/proguard.cfg" target="_self">here</a> but you should test it and see Netmera is working properly.</p>
 
 	</div>
-</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky8-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky8" style="width: 192px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Create A Google Cloud Messaging Configuration</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Integrate SDK</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Initialize Netmera</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Enable Popup Presentation</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
-
+</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky9-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky9" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Create A Google Cloud Messaging Configuration</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Integrate SDK</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Initialize Netmera</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Enable Popup Presentation</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
 <div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Push Notifications</h1><div class="excerpt"><p>Advanced Push Notification Management</p>
 </div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
 <!-- Gah, you have to manually restart the app if you change this!-->
@@ -383,11 +382,10 @@ following actions.
     }
 }</span></code></pre><!-- end ngIf: tab == 0 -->
 	</div>
-</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky2-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky2" style="width: 192px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">
+</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky5-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky5" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">
 		
 	</a><!-- ngIf: node.children.length --><ul ng-if="node.children.length" class="ng-scope"><!-- ngRepeat: node in node.children --><li ng-repeat="node in node.children" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Push Callbacks</a></li><!-- end ngRepeat: node in node.children --></ul><!-- end ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
-	
-<div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Events</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
+	<div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Events</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
 <!-- Gah, you have to manually restart the app if you change this!-->
 <div class="magic-block-textarea"><h1 class="header-scroll"><div class="anchor waypoint" id="section-internal-events"></div>Internal Events<a class="fa fa-anchor" href="#section-internal-events"></a></h1>
 <p>By default, Netmera SDK automatically tracks and reports the following behaviors about application usage:</p>
@@ -455,8 +453,7 @@ following actions.
         
 <span class="cm-variable">Netmera</span>.<span class="cm-variable">sendEvent</span>(<span class="cm-variable">event</span>);</span></code></pre><!-- end ngIf: tab == 0 -->
 	</div>
-</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky3-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky3" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Internal Events</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Built-in Events</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Custom Events</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
-
+</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky6-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky6" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Internal Events</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Built-in Events</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Custom Events</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
 <div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Geofence &amp; Location</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
 <!-- Gah, you have to manually restart the app if you change this!-->
 <div class="magic-block-textarea"><p>By default, Netmera SDK does not gather any location information from device. If you want to use location related features of Netmera such as geofence messages and filtering target users by location, you should make some extra implementation.</p>
@@ -519,8 +516,224 @@ following actions.
 	<div class="callout-body"><p>You can set max regions for Geofence with <strong>setNetmeraMaxActiveRegions</strong> method. If you set max active regions' number greater than 100 or smaller than 0, it will be set as the default which is 100.</p>
 
 	</div>
-</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky4-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky4" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Add Google Play Services Location Library</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Add Permissions</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Request Permissions</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
+</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky7-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky7" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Add Google Play Services Location Library</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Add Permissions</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Request Permissions</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
+<div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>User</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
+<!-- Gah, you have to manually restart the app if you change this!-->
+<div class="magic-block-textarea"><p>Use <code>NetmeraUser</code> class to send information about your application's users to Netmera in a structured way.</p>
+<p>Typical place to inform Netmera about application user's attributes is after your users has logged in to your application. After you have information about your logged in user, you should create a <code>NetmeraUser</code> object, set values, then call <code>Netmera.updateUser()</code> method like below:</p>
 
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Java</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-variable">NetmeraUser</span> <span class="cm-variable">netmeraUser</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">NetmeraUser</span>();
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setUserId</span>(<span class="cm-string">"the_greatest"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setMsisdn</span>(<span class="cm-string">"001XXXXXXXXX"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setEmail</span>(<span class="cm-string">"clay@champion.com"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setName</span>(<span class="cm-string">"Muhammad Ali"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setSurname</span>(<span class="cm-string">"Clay"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setExternalSegments</span>(<span class="cm-variable">Arrays</span>.<span class="cm-variable">asList</span>(<span class="cm-string">"sports"</span>, <span class="cm-string">"box"</span>));
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setGender</span>(<span class="cm-variable">NetmeraUser</span>.<span class="cm-variable">GENDER_MALE</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setDateOfBirth</span>(<span class="cm-keyword">new</span> <span class="cm-variable">GregorianCalendar</span>(<span class="cm-number">1942</span>, <span class="cm-number">1</span>, <span class="cm-number">17</span>).<span class="cm-variable">getTime</span>());
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setMaritalStatus</span>(<span class="cm-variable">NetmeraUser</span>.<span class="cm-variable">MARITAL_STATUS_MARRIED</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setChildCount</span>(<span class="cm-number">9</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setCountry</span>(<span class="cm-string">"USA"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setState</span>(<span class="cm-string">"Arizona"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setCity</span>(<span class="cm-string">"Scottsdale"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setDistrict</span>(<span class="cm-string">"Old Town Scottsdale"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setOccupation</span>(<span class="cm-string">"Professional Boxer"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setIndustry</span>(<span class="cm-string">"Sports"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setFavoriteTeam</span>(<span class="cm-string">"My Team"</span>);
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setLanguage</span>(<span class="cm-string">"English"</span>);
+<span class="cm-comment">// Send data to Netmera</span>
+<span class="cm-variable">Netmera</span>.<span class="cm-variable">updateUser</span>(<span class="cm-variable">netmeraUser</span>);</span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div>
+<div class="magic-block-textarea"><p>You can also update any attribute independent from the others. </p>
+<p>If you need to remove a previously set attribute from Netmera, you must set <code>null</code> for corresponding attribute. Here is an example:</p>
 
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Java</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-variable">NetmeraUser</span> <span class="cm-variable">netmeraUser</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">NetmeraUser</span>();
+<span class="cm-comment">// This will remove previously set `email` value from Netmera</span>
+<span class="cm-variable">netmeraUser</span>.<span class="cm-variable">setEmail</span>(<span class="cm-atom">null</span>);
+<span class="cm-variable">Netmera</span>.<span class="cm-variable">updateUser</span>(<span class="cm-variable">netmeraUser</span>);</span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div>
+<div class="magic-block-callout type-warning no-title"><span class="noTitleIcon"><i title="Warning" class="fa fa-exclamation-circle"></i></span>
+	<div class="callout-body"><p>userId cannot be removed even if you set <code>null</code> to it.</p>
+
+	</div>
+</div>
+<div class="magic-block-textarea"><h2 class="header-scroll"><div class="anchor waypoint" id="section-custom-user"></div>Custom User<a class="fa fa-anchor" href="#section-custom-user"></a></h2>
+<p>Similar to events, you can generate a custom <code>NetmeraUser</code> subclass using Netmera Dashboard if the set of built-in attributes is not enough for use case.</p>
+<p>Netmera will automatically generate the source files for your custom user class, so that you can easily use them to send information about your custom attributes.</p>
+
+</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky8-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky8" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Custom User</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
+<div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Sound &amp; Vibration</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
+<!-- Gah, you have to manually restart the app if you change this!-->
+<div class="magic-block-textarea"><h1 class="header-scroll"><div class="anchor waypoint" id="section-sending-a-push-notification-with-sound"></div>Sending a Push Notification with Sound<a class="fa fa-anchor" href="#section-sending-a-push-notification-with-sound"></a></h1>
+<p>Sending push notifications with sound can be done with enabling "Play Sound" section on "What" tab while creating a new push. If you select "Default" the default sound of the device will be ringed if the sound is enabled from the device.</p>
+
+</div>
+<div class="magic-block-image">
+	<figure><a href="https://files.readme.io/3228c5c-PlaySoundAndroid.png" class="block-display-image-parent block-display-image-size-smart "><img src="https://files.readme.io/3228c5c-PlaySoundAndroid.png"></a>
+	</figure>
+</div>
+<div class="magic-block-textarea"><h1 class="header-scroll"><div class="anchor waypoint" id="section-sending-a-push-notification-with-vibration"></div>Sending a Push Notification with Vibration<a class="fa fa-anchor" href="#section-sending-a-push-notification-with-vibration"></a></h1>
+<p>For using vibration on your Android application, you should add the following permission to your Android.manifest file, as a direct child of the manifest element:</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Android Manifest</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-operator">&lt;</span><span class="cm-variable">uses</span><span class="cm-operator">-</span><span class="cm-variable">permission</span> <span class="cm-variable">android</span>:<span class="cm-variable">name</span><span class="cm-operator">=</span><span class="cm-string">"android.permission.VIBRATE"</span> <span class="cm-operator">/&gt;</span></span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div>
+<div class="magic-block-textarea"><p>After that, you should enable vibration from the What tab while creating a campaign.</p>
+
+</div>
+<div class="magic-block-image">
+	<figure><a href="https://files.readme.io/638eef4-Vibrate.png" class="block-display-image-parent block-display-image-size-smart "><img src="https://files.readme.io/638eef4-Vibrate.png"></a>
+	</figure>
+</div>
+<div class="magic-block-textarea"><h1 class="header-scroll"><div class="anchor waypoint" id="section-adding-custom-sound-to-your-project"></div>Adding Custom Sound to Your Project<a class="fa fa-anchor" href="#section-adding-custom-sound-to-your-project"></a></h1>
+<p>To perform this function, you should pay attention to some constraints. One of them is that your sound file should be included in your main bundle. If this condition does not meet, default sound of your phone will be played when receiving the push notification, instead. Another constraint is that you can use just the audio data packaged in an ‘aiff’, ‘wav’ or ‘caf’ file (i.e. your_sound_name.aiff). Last constraint is that you can add at most 30-seconds-length custom sounds. If any sound exceeds 30 seconds, the default sound of your phone will be played instead of your custom one. You can select any sound name in the drop-box menu. All items in the menu are the sound files which extensions satisfy the push sound extensions (.aiff, .wav and .caf).</p>
+<p>After the sound file is added to your project, you should create a new sound from the web panel. Go to Developers -&gt; Sound -&gt; Create New Sound. While creating the sound you shall not use any file extensions on Sound FileName.</p>
+
+</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky9-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky9" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Sending a Push Notification with Sound</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Sending a Push Notification with Vibration</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Adding Custom Sound to Your Project</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
+<div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Inbox</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
+<!-- Gah, you have to manually restart the app if you change this!-->
+<div class="magic-block-textarea"><p>If your application needs information about the push notifications that are previously sent to device by Netmera, you can use <code>NetmeraInbox</code> class to fetch that information from Netmera.</p>
+<p>The most common use case for this would be to show the list of notifications inside your application in an inbox-style interface.</p>
+<p><code>NetmeraInbox</code> is the core class providing methods and properties needed for operations on push notifications like fetching push objects or updating push objects' status, but you can not directly initialize a <code>NetmeraInbox</code> instance. You get an instance from SDK, then operate on that instance for future inbox actions. Here is the common workflow to use inbox feature of Netmera.</p>
+<h3 class="header-scroll"><div class="anchor waypoint" id="section-1-determine-properties-of-push-notifications-to-fetch"></div>1. Determine properties of push notifications to fetch<a class="fa fa-anchor" href="#section-1-determine-properties-of-push-notifications-to-fetch"></a></h3>
+<p>You must first define filtering properties by creating a <code>NetmeraInboxFilter</code> instance. You can determine which push notifications will be included in the fetched list by setting related properties of this <code>NetmeraInboxFilter</code> instance.</p>
+<p><code>NetmeraInboxFilter</code> class provides filtering according to the following options:</p>
+<ul>
+<li>Inbox Status : Read / Unread / Deleted</li><li>Categories : Categories to which push notifications are belong.</li><li>Including expired push notifications or not.</li><li>Page Size : This is not to filter, but to determine the size of chunks which will be gathered during one request.</li></ul>
+<p>Here is a sample code to determine filtering options: </p>
+
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Java</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-variable">NetmeraInboxFilter</span> <span class="cm-variable">filter</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">NetmeraInboxFilter</span>.<span class="cm-variable">Builder</span>()
+        <span class="cm-comment">//Default value is Integer.MAX_VALUE</span>
+        .<span class="cm-variable">pageSize</span>(<span class="cm-number">20</span>)
+        <span class="cm-comment">// Default value is NetmeraPushObject.STATUS_READ | NetmeraPushObject.STATUS_UNREAD</span>
+        .<span class="cm-variable">status</span>(<span class="cm-variable">NetmeraPushObject</span>.<span class="cm-variable">STATUS_ALL</span>)
+        <span class="cm-comment">//Default value is null</span>
+        .<span class="cm-variable">categories</span>(<span class="cm-variable">Arrays</span>.<span class="cm-variable">asList</span>(<span class="cm-string">"category_1"</span>, <span class="cm-string">"category_2"</span>))
+        <span class="cm-comment">//Default value is false</span>
+        .<span class="cm-variable">includeExpiredObjects</span>(<span class="cm-atom">true</span>)
+        <span class="cm-comment">//create filter object from builder</span>
+        .<span class="cm-variable">build</span>();</span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div>
+<div class="magic-block-textarea"><h3 class="header-scroll"><div class="anchor waypoint" id="section-2-fetch-the-first-page-and-get-the-netmerainbox-instance"></div>2. Fetch the first page and get the <code>NetmeraInbox</code> instance<a class="fa fa-anchor" href="#section-2-fetch-the-first-page-and-get-the-netmerainbox-instance"></a></h3>
+<p>Now, you can request from Netmera to return the list of push notification objects matching with the filter object using the following code:</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Java</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-variable">Netmera</span>.<span class="cm-variable">fetchInbox</span>(<span class="cm-variable">filter</span>, <span class="cm-keyword">new</span> <span class="cm-variable">NetmeraInbox</span>.<span class="cm-variable">NetmeraInboxFetchCallback</span>() {
+        <span class="cm-meta">@Override</span> <span class="cm-keyword">public</span> <span class="cm-variable-3">void</span> <span class="cm-variable">NetmeraInbox</span>.<span class="cm-variable">NetmeraInboxFetchCallback</span>(<span class="cm-variable">NetmeraInbox</span> <span class="cm-variable">netmeraInbox</span>, <span class="cm-variable">NetmeraError</span> <span class="cm-variable">error</span>) {
+          <span class="cm-keyword">if</span> (<span class="cm-variable">error</span> <span class="cm-operator">!=</span> <span class="cm-atom">null</span>) {
+            <span class="cm-comment">//handle error</span>
+            <span class="cm-variable">Toast</span>.<span class="cm-variable">makeText</span>(<span class="cm-variable">context</span>, <span class="cm-variable">error</span>.<span class="cm-variable">getMessage</span>(), <span class="cm-variable">Toast</span>.<span class="cm-variable">LENGTH_LONG</span>).<span class="cm-variable">show</span>();
+            <span class="cm-keyword">return</span>;
+          }
+          <span class="cm-comment">// Store returned inbox object for future operations</span>
+          <span class="cm-variable">mInbox</span> <span class="cm-operator">=</span> <span class="cm-variable">netmeraInbox</span>;
+        }
+      });</span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div>
+<div class="magic-block-textarea"><p>If fetch operations succeeds, NetmeraInbox.NetmeraInboxFetchCallback's NetmeraInbox.NetmeraInboxFetchCallback method will be called with an <code>inbox</code> object which contains the first chunk of push notifications matching with given filter, and a <code>null</code> <code>error</code>. Otherwise, it will be called with a <code>null</code> <code>inbox</code> object and an <code>error</code> object containing details about the reason of failure.</p>
+<p>Now you can present the list of push objects inside your application. You get the list using <code>pushObjects()</code> method of NetmeraInbox, which return a list of <code>NetmeraPushObject</code> instances. Moreover, for further operations like fetching next pages, setting status, you will be using NetmeraInbox object's methods.</p>
+
+</div>
+<div class="magic-block-callout type-warning no-title"><span class="noTitleIcon"><i title="Warning" class="fa fa-exclamation-circle"></i></span>
+	<div class="callout-body"><p>Filter properties of an inbox instance could not be changed. If you need to modify filter properties, you have to create a new filter object and start a new fetch operation using <code>Netmera.fetchInbox</code> method.</p>
+
+	</div>
+</div>
+<div class="magic-block-textarea"><h3 class="header-scroll"><div class="anchor waypoint" id="section-3-fetch-next-pages-via-netmerainbox-object"></div>3. Fetch next pages via NetmeraInbox object<a class="fa fa-anchor" href="#section-3-fetch-next-pages-via-netmerainbox-object"></a></h3>
+<p>After you get NetmeraInbox object which contains first page of the push notifications, you can fetch next pages with a very similar code shown above but this time via your NetmeraInbox instance. New pages are collected on already created NetmeraInbox object, therefore you can use same response handling with fetching first page.<br>NetmeraInbox has a method named <strong>hasNextPage</strong> for checking whether there exists more pages or not. You can use that method to decide whether you should fetch next page or not, to change your ui to let user know she has got to the end of list, etc.<br>Here is the sample code:</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Java</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-keyword">if</span>(<span class="cm-variable">mInbox</span>.<span class="cm-variable">hasNextPage</span>()){
+  <span class="cm-variable">mInbox</span>.<span class="cm-variable">fetchNextPage</span>(<span class="cm-keyword">new</span> <span class="cm-variable">NetmeraInbox</span>.<span class="cm-variable">NetmeraInboxFetchCallback</span>() {
+        <span class="cm-meta">@Override</span> <span class="cm-keyword">public</span> <span class="cm-variable-3">void</span> <span class="cm-variable">onFetchInbox</span>(<span class="cm-variable">NetmeraInbox</span> <span class="cm-variable">netmeraInbox</span>, <span class="cm-variable">NetmeraError</span> <span class="cm-variable">error</span>) {
+          <span class="cm-comment">//handle same as former sample</span>
+        }
+      });
+}</span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div>
+<div class="magic-block-callout type-warning no-title"><span class="noTitleIcon"><i title="Warning" class="fa fa-exclamation-circle"></i></span>
+	<div class="callout-body"><p>If you call fetchNextPage when there is no more next page, onFetchInbox method will be called immediately with a <strong>no next page</strong> error.</p>
+
+	</div>
+</div>
+<div class="magic-block-textarea"><h3 class="header-scroll"><div class="anchor waypoint" id="section-4-update-the-status-of-push-notifications"></div>4. Update the status of push notifications<a class="fa fa-anchor" href="#section-4-update-the-status-of-push-notifications"></a></h3>
+<p>Push notifications may have 3 different states, which are the followings:</p>
+<ul>
+<li>Unread</li><li>Read</li><li>Deleted</li></ul>
+<p>These three states allows you to implement a simple notification inbox interface for your users where they can read messages, mark previously read message as unread, delete messages and restore them again if needed.</p>
+<p>You can make transitions among states for push notifications inside inbox using <code>updateStatus</code> method. Calling this method will start an asynchronous request to update status for given push objects, and given callback will be called upon the result of the request.<br>Here is a sample implementation which deleted the first 5 push objects from inbox:</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Java</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-variable">List</span><span class="cm-operator">&lt;</span><span class="cm-variable">NetmeraPushObject</span><span class="cm-operator">&gt;</span> <span class="cm-variable">objectsToDelete</span> <span class="cm-operator">=</span> <span class="cm-variable">inbox</span>.<span class="cm-variable">pushObjects</span>().<span class="cm-variable">subList</span>(<span class="cm-number">0</span>, <span class="cm-number">5</span>);
+<span class="cm-variable">inbox</span>.<span class="cm-variable">updateStatus</span>(<span class="cm-variable">objectsToDelete</span>, <span class="cm-variable">NetmeraPushObject</span>.<span class="cm-variable">STATUS_DELETED</span>,
+    <span class="cm-keyword">new</span> <span class="cm-variable">NetmeraInbox</span>.<span class="cm-variable">NetmeraInboxStatusCallback</span>() {
+  <span class="cm-meta">@Override</span> <span class="cm-keyword">public</span> <span class="cm-variable-3">void</span> <span class="cm-variable">onSetStatusInbox</span>(<span class="cm-variable">NetmeraError</span> <span class="cm-variable">error</span>) {
+    <span class="cm-keyword">if</span> (<span class="cm-variable">error</span> <span class="cm-operator">!=</span> <span class="cm-atom">null</span>) {
+      <span class="cm-comment">//handle</span>
+    }
+  }
+});</span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div>
+<div class="magic-block-textarea"><p>If operation fails for some reason, completion block will be called with a <code>nonnull</code> <code>error</code> parameter describing the reason of failure.</p>
+<h3 class="header-scroll"><div class="anchor waypoint" id="section-5-get-count-for-one-or-more-status"></div>5. Get count for one or more status<a class="fa fa-anchor" href="#section-5-get-count-for-one-or-more-status"></a></h3>
+<p>You can get total count of push objects according to the status info among the push objects that matches given filter. Count can be get only for one specific status as well as for combined set of status values.</p>
+
+</div>
+<div class="magic-block-code ng-scope">
+	<ul class="block-code-header">
+		<li><a href="" ng-click="showCode(0)" ng-class="{active: (0 == tab)}" class="active">Java</a></li>
+	</ul>
+	<div class="block-code-code">
+		<!-- ngIf: tab == 0 --><pre ng-if="tab == 0" class="ng-scope"><code><span class="cm-s-neo"><span class="cm-comment">//get count of deleted push objects</span>
+<span class="cm-variable">inbox</span>.<span class="cm-variable">countForStatus</span>(<span class="cm-variable">NetmeraPushObject</span>.<span class="cm-variable">STATUS_DELETED</span>);
+
+<span class="cm-comment">//get count of read and unread push objects</span>
+<span class="cm-variable">inbox</span>.<span class="cm-variable">countForStatus</span>(<span class="cm-variable">NetmeraPushObject</span>.<span class="cm-variable">STATUS_READ</span> <span class="cm-operator">|</span> <span class="cm-variable">NetmeraPushObject</span>.<span class="cm-variable">STATUS_UNREAD</span>);</span></code></pre><!-- end ngIf: tab == 0 -->
+	</div>
+</div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky10-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky10" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">1. Determine properties of push notifications to fetch</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">2. Fetch the first page and get the NetmeraInbox instance</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">3. Fetch next pages via NetmeraInbox object</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">4. Update the status of push notifications</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">5. Get count for one or more status</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
 </html>	
-
