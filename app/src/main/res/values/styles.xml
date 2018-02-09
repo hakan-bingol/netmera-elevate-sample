@@ -35,16 +35,26 @@
 
     <!-- Custom in-app message style -->
     <style name="NetmeraInAppMessageStyle">
+        //in-app message view width in ratio
         <item name="inAppMessageWidth">@integer/netmera_default_vertical_width</item>
+        //in-app message view height in ratio
         <item name="inAppMessageHeight">@integer/netmera_default_vertical_height</item>
+        //in-app message view weight in ratio
         <item name="inAppMessageWeight">@integer/netmera_default_vertical_weight</item>
+        //in-app message view backgroundcolor
         <item name="inAppMessageBackground">@drawable/netmera_bg_in_app_message</item>
+        //in-app message view cancel button image
         <item name="inAppMessageCancelButtonDrawable">@drawable/netmera_ic_action_cancel</item>
+        //in-app message view title size
         <item name="inAppMessageTitleSize">@dimen/netmera_text_default_size</item>
+        //in-app message view title color
         <item name="inAppMessageTitleColor">@android:color/primary_text_light</item>
-        <item name="inAppMessageTextSize">@dimen/netmera_text_small_size</item>
+        //in-app message view text size
+        <item name="inAppMessageTextSize">@dimen/netmera_text_default_size</item>
+        //in-app message view text color
         <item name="inAppMessageTextColor">@android:color/primary_text_light</item>
-        <item name="inAppMessageFontPath">font/DroidSerif-Regular.ttf</item>
+        //in-app message view title and text fontPath
+        <item name="inAppMessageFontPath">/assets/font/DroidSerif-Regular.ttf</item>
     </style>
 
 </resources>

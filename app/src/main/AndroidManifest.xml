@@ -115,6 +115,7 @@
                 <action android:name="com.netmera.push.intent.OPEN"/>
                 <action android:name="com.netmera.push.intent.DISMISS"/>
                 <action android:name="com.netmera.push.intent.BUTTON"/>
+                <!--If you want to use carousel push notifications, you should add the following actions.-->
                 <action android:name="com.netmera.push.intent.carousel.OPEN"/>
                 <action android:name="com.netmera.push.intent.carousel.PREV"/>
                 <action android:name="com.netmera.push.intent.carousel.NEXT"/>
@@ -122,14 +123,13 @@
             </intent-filter>
         </receiver>
 
-        <!--<receiver-->
-            <!--android:name=".NGWebContentBroadcastReceiver"-->
-            <!--android:exported="false">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.netmera.web.content.SHOW"/>-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
+        <receiver
+            android:name=".NGWebContentBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.netmera.web.content.SHOW"/>
+            </intent-filter>
+        </receiver>
 
     </application>
-
 </manifest>
