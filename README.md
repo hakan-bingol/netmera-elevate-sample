@@ -70,8 +70,6 @@
 	<h3><i title="Danger" class="fa fa-exclamation-triangle"></i>Important Note for Obfuscating
 	</h3>
 	<div class="callout-body"><p>If you obfuscate your code, you should add the following lines to your proguard-rules.pro file</p>
-
-	</div>
 </div>
 <div class="magic-block-code ng-scope">
 	<ul class="block-code-header">
@@ -128,15 +126,12 @@
 	<div class="callout-body"><p>Now your devices will receive the following push notification types sent via Netmera Dashboard:</p>
 <ul>
 <li>Standard push notifications</li><li>Interactive push notifications</li><li>Push notifications with web view content</li><li>Push notifications with deeplinks (If your application supports URL Scheme based deeplinks and you have set the application's URL Scheme to the Dashboard)</li><li>Popup style notifications</li></ul>
-
-	</div>
 </div>
 <div class="magic-block-callout type-info ">
 	<h3><i title="Info" class="fa fa-info-circle"></i>PROGUARD
 	</h3>
 	<div class="callout-body"><p>This step is crucial if you use proguard:<br>Netmera uses Gson for json operations. Therefore, make sure that you have added up-to-date proguard rules of Gson to your configuration file.<br>Currently list of rules are <a href="https://github.com/google/gson/blob/master/examples/android-proguard-example/proguard.cfg" target="_self">here</a> but you should test it and see Netmera is working properly.</p>
-
-	</div>
+	
 </div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky9-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky9" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Create A Google Cloud Messaging Configuration</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Integrate SDK</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Initialize Netmera</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Enable Popup Presentation</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
 <div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>Push Notifications</h1><div class="excerpt"><p>Advanced Push Notification Management</p>
 </div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
@@ -244,7 +239,6 @@
 <div class="magic-block-callout type-info no-title"><span class="noTitleIcon"><i title="Info" class="fa fa-info-circle"></i></span>
 	<div class="callout-body"><p>In order to use in app messages, you should integrate the SDK version 3.4.0 or higher.</p>
 
-	</div>
 </div>
 <div class="magic-block-textarea"><p>You can customize the in app messages from the styles.xml with the attributes below</p>
 
@@ -508,14 +502,12 @@ following actions.
 <ul>
 <li>Enable location history for location tracking</li><li>Add some Geofence places for region tracking.</li></ul>
 
-	</div>
 </div>
 <div class="magic-block-callout type-info ">
 	<h3><i title="Info" class="fa fa-info-circle"></i>Info
 	</h3>
 	<div class="callout-body"><p>You can set max regions for Geofence with <strong>setNetmeraMaxActiveRegions</strong> method. If you set max active regions' number greater than 100 or smaller than 0, it will be set as the default which is 100.</p>
 
-	</div>
 </div></section><section ng-show="ss.toc.length" class="content-toc grid-25"><!-- ngIf: stickyTOC --><div id="sticky7-sticky-wrapper" class="sticky-wrapper"><div sticky="66" ng-if="stickyTOC" class="sticky-toc ng-scope" id="sticky7" style="width: 686px;"><nav><div class=""><ul><li ng-show="ss.toc.length"><a href="" ng-click="scrollTo()" class="tocHeader"><i class="icon icon-text-align-left"></i>Table of Contents</a></li><!-- ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Add Google Play Services Location Library</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Add Permissions</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --><li ng-repeat="node in ss.toc" class="toc-DIV"> <a href="" ng-click="scrollTo(node.data[0])" class="ng-binding">Request Permissions</a><!-- ngIf: node.children.length --></li><!-- end ngRepeat: node in ss.toc --></ul></div></nav></div></div><!-- end ngIf: stickyTOC --><!-- ngIf: !stickyTOC --></section></div></div>
 <div ng-if="!suggestedEdits.isEnabled" class="ng-scope"><header id="content-head"><div class="row clearfix"><div class="col-xs-9"><h1>User</h1><div class="excerpt"></div></div><div class="col-xs-3"><a ng-click="suggestedEdits.enable()" href="" class="suggestEdits"><i class="icon icon-register"></i>Suggest Edits</a></div></div></header><div id="content-container" scroll-spy="" class="grid-container-fluid ng-scope"><section ng-class="{&quot;grid-75&quot;: false != true &amp;&amp; ss.toc.length , &quot;grid-100&quot;: false != false || !ss.toc.length}" class="content-body grid-75">
 <!-- Gah, you have to manually restart the app if you change this!-->
@@ -569,7 +561,6 @@ following actions.
 <div class="magic-block-callout type-warning no-title"><span class="noTitleIcon"><i title="Warning" class="fa fa-exclamation-circle"></i></span>
 	<div class="callout-body"><p>userId cannot be removed even if you set <code>null</code> to it.</p>
 
-	</div>
 </div>
 <div class="magic-block-textarea"><h2 class="header-scroll"><div class="anchor waypoint" id="section-custom-user"></div>Custom User<a class="fa fa-anchor" href="#section-custom-user"></a></h2>
 <p>Similar to events, you can generate a custom <code>NetmeraUser</code> subclass using Netmera Dashboard if the set of built-in attributes is not enough for use case.</p>
@@ -670,7 +661,6 @@ following actions.
 <div class="magic-block-callout type-warning no-title"><span class="noTitleIcon"><i title="Warning" class="fa fa-exclamation-circle"></i></span>
 	<div class="callout-body"><p>Filter properties of an inbox instance could not be changed. If you need to modify filter properties, you have to create a new filter object and start a new fetch operation using <code>Netmera.fetchInbox</code> method.</p>
 
-	</div>
 </div>
 <div class="magic-block-textarea"><h3 class="header-scroll"><div class="anchor waypoint" id="section-3-fetch-next-pages-via-netmerainbox-object"></div>3. Fetch next pages via NetmeraInbox object<a class="fa fa-anchor" href="#section-3-fetch-next-pages-via-netmerainbox-object"></a></h3>
 <p>After you get NetmeraInbox object which contains first page of the push notifications, you can fetch next pages with a very similar code shown above but this time via your NetmeraInbox instance. New pages are collected on already created NetmeraInbox object, therefore you can use same response handling with fetching first page.<br>NetmeraInbox has a method named <strong>hasNextPage</strong> for checking whether there exists more pages or not. You can use that method to decide whether you should fetch next page or not, to change your ui to let user know she has got to the end of list, etc.<br>Here is the sample code:</p>
@@ -693,7 +683,6 @@ following actions.
 <div class="magic-block-callout type-warning no-title"><span class="noTitleIcon"><i title="Warning" class="fa fa-exclamation-circle"></i></span>
 	<div class="callout-body"><p>If you call fetchNextPage when there is no more next page, onFetchInbox method will be called immediately with a <strong>no next page</strong> error.</p>
 
-	</div>
 </div>
 <div class="magic-block-textarea"><h3 class="header-scroll"><div class="anchor waypoint" id="section-4-update-the-status-of-push-notifications"></div>4. Update the status of push notifications<a class="fa fa-anchor" href="#section-4-update-the-status-of-push-notifications"></a></h3>
 <p>Push notifications may have 3 different states, which are the followings:</p>
